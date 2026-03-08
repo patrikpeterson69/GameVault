@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"[Environment]::SetEnvironmentVariable\\(''PATH'', [Environment]::GetEnvironmentVariable\\(''PATH'', ''User''\\) + '';C:\\\\Users\\\\Patrik\\\\maven\\\\apache-maven-3.9.13\\\\bin'', ''User''\\)\")",
+      "Bash(export PATH=\"$PATH:/c/Users/Patrik/maven/apache-maven-3.9.13/bin\")",
+      "Bash(mvn --version)",
+      "Bash(powershell -Command \"Get-Command java | Select-Object -ExpandProperty Source\")",
+      "Bash(powershell -Command \"Get-ChildItem ''C:\\\\Program Files\\\\Java'' -ErrorAction SilentlyContinue | Select-Object Name; Get-ChildItem ''C:\\\\Program Files\\\\Eclipse Adoptium'' -ErrorAction SilentlyContinue | Select-Object Name; Get-ChildItem ''C:\\\\Program Files\\\\Microsoft'' -ErrorAction SilentlyContinue | Where-Object {$_Name -like ''*jdk*'' -or $_Name -like ''*java*''} | Select-Object Name\")",
+      "Bash(powershell -Command \"Get-ChildItem ''C:\\\\Program Files\\\\Eclipse Adoptium\\\\latest'' -ErrorAction SilentlyContinue | Select-Object Name, FullName\")"
+    ]
+  }
+}

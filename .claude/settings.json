@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"Get-ChildItem ''C:\\\\Program Files\\\\Eclipse Adoptium'' -ErrorAction SilentlyContinue\")",
+      "Bash(powershell -Command \"Get-ChildItem ''C:\\\\Program Files\\\\Java''\")",
+      "Bash(powershell -Command \"Get-ChildItem ''C:\\\\Program Files\\\\Java\\\\latest''\")",
+      "Bash(winget install Microsoft.OpenJDK.17 --source winget)",
+      "Bash(export JAVA_HOME=\"C:/Program Files/Microsoft/jdk-17.0.18.8-hotspot\")",
+      "Bash(powershell -Command \"[Environment]::SetEnvironmentVariable\\(''JAVA_HOME'', ''C:\\\\Program Files\\\\Microsoft\\\\jdk-17.0.18.8-hotspot'', ''User''\\)\")",
+      "Bash(mvn spring-boot:run)"
+    ]
+  }
+}
